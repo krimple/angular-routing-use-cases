@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
+    <script src="bower_components/angular/angular.js"></script>
+
+</head>
+
+<body ng-app="myApp" ng-controller='AppController'>
+<md-toolbar>
+    <h2>Hi there</h2>
+</md-toolbar>
+<md-container layout="column">
+    <md-container layout="row">
+        <a ng-link="one()">One</a>
+        <a href="#/one">One (old style)</a>
+        &nbsp; | &nbsp;
+        <a ng-link="two()">Two</a>
+        <a href="#/two">Two (old style)</a>
+    </md-container>
+        <div ng-viewport='top'></div>
+        <div ng-viewport='bottom'></div>
+    </md-container>
+    <script src="bower_components/angular-material/angular-material.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-aria/angular-aria.js"></script>
+    <script src="router.es5.js"></script>
+    <script src="components/blank/blank.js"></script>
+    <script src="components/one/one.js"></script>
+    <script src="components/two/two.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

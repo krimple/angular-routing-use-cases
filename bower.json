@@ -1,0 +1,15 @@
+{
+  "name": "route-with-multiple-view-areas",
+  "version": "0.0.0",
+  "authors": [
+    "Ken Rimple <krimple@chariotsolutions.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

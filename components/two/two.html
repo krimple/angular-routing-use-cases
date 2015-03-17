@@ -1,0 +1,18 @@
+{{ two.message }}
+
+<md-content ng-controller="TwoTopController as top">
+    <md-list>
+        <md-item-content ng-repeat="person in top.people">
+            <div class="md-tile-left"><img ng-src="{{person.picture}}"></div>
+            <div class="md-tile-content">
+                <h3>{{ person.name.first }} {{ person.name.last}}</h3>
+                <p>Age: {{ person.age }}</p>
+                <p>Balance owed: {{ person.balance | currency:'$USD' }}</p>
+                <p>Active? {{ person.isActive === true ?  "Yes" : "No" }}</p>
+                <md-divider></md-divider>
+            </div>
+            <div class="md-tile-right"><button ng-click="top.raiseBottomSheet($index)">Edit</button></div>
+
+        </md-item-content>
+    </md-list>
+</md-content>
